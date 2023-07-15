@@ -29,7 +29,7 @@ end
 local blackScreen = vgui.Create("DPanel")
 blackScreen:SetSize(screenWidth, screenHeight)
 blackScreen:SetPos(0, 0)
-blackScreen:SetAlpha(0) -- Set initial alpha to 0
+blackScreen:SetAlpha(0)
 blackScreen.Paint = function(self, w, h)
     local alpha = self:GetAlpha()
     surface.SetDrawColor(0, 0, 0, alpha)
